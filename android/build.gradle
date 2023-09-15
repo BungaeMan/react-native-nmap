@@ -11,12 +11,12 @@ buildscript {
 }
 
 android {
-    rootProject.ext.compileSdkVersion : 33
-    rootProject.ext.buildToolsVersion : "30.0.3"
+    compileSdkVersion  30
+    buildToolsVersion "30.0.3"
 
     defaultConfig {
-        rootProject.ext.minSdkVersion : 30
-        rootProject.ext.targetSdkVersion : 33
+        minSdkVersion 30
+        targetSdkVersion 33
 
         versionCode 1
         versionName "1.0"
