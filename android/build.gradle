@@ -1,6 +1,12 @@
 apply plugin: 'com.android.library'
 
 buildscript {
+    ext {
+        buildToolsVersion = "30.0.3"
+        minSdkVersion = 30
+        compileSdkVersion = 30
+        targetSdkVersion = 33
+    }
     repositories {
         google()
         mavenCentral()
@@ -11,12 +17,8 @@ buildscript {
 }
 
 android {
-    compileSdkVersion  30
-    buildToolsVersion "30.0.3"
 
     defaultConfig {
-        minSdkVersion 30
-        targetSdkVersion 33
 
         versionCode 1
         versionName "1.0"
